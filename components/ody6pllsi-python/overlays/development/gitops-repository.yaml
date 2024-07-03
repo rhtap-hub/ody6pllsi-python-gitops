@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ody6pllsi-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-hub/ody6pllsi-python-gitops

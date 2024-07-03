@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ody6pllsi-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ody6pllsi-python 
+  name: ody6pllsi-python
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: ody6pllsi-python
+    weight: 100 
